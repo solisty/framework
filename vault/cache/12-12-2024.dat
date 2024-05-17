@@ -1,0 +1,2 @@
+a:1:{s:3:"foo";O:8:"stdClass":1:{s:3:"bar";s:3:"baz";}}
+a:1:{s:4:"user";O:8:"stdClass":1:{s:4:"name";s:5:"fathi";}}

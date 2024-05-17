@@ -1,0 +1,10 @@
+#!/bin/php
+<?php
+
+use Solisty\CommandLine\CommandLine;
+
+require __DIR__ . "/vendor/autoload.php";
+
+$cli = new CommandLine($argv);
+
+$cli->run();
