@@ -2,9 +2,18 @@
 <?php
 
 use Solisty\CommandLine\CommandLine;
+use Solisty\Main\Application;
 
 require __DIR__ . "/vendor/autoload.php";
 
-$cli = new CommandLine($argv);
+try {
+    Application::create([
+        "APP_BASE" => __DIR__,
+    ], false, true);
 
-$cli->run();
+    $cli = new CommandLine($argv);
+
+    $cli->run();
+} catch (Exception $ex) {
+    echo $ex;
+}
