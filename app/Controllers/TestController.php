@@ -2,31 +2,28 @@
 
 namespace App\Controllers;
 
-use App\Models\User;
 use Solisty\Http\Request;
 
 class TestController
 {
     public function test(Request $request)
     {
-        // $user = User::insert([
-        //     'email' => 'test@test.com',
-        //     // 'name' => 'test name',
-        //     'password' => 'abc'
-        // ]);
-        
-        $message = "ftoooh";
-        return view('../views/view.flame.php', [
-            'message' => $message,
-            'user' => User::find(1)
-        ]);
+        return view('../views/test.flame.php');
     }
 
     public function createUser()
     {
-        
+
         return [
             "error" => false
+        ];
+    }
+
+    public function createLike()
+    {
+
+        return [
+            'error' => false
         ];
     }
 }

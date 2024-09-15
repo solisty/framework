@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-The current UNIX timestamp is <?php echo htmlspecialchars(time()); ?>.
+The current UNIX timestamp is {% time() %}.
 </body>
 </html>

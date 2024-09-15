@@ -30,12 +30,14 @@
         </h1>
 
         <div>
-            <a href="{% route('home') %}">refresh</a>
+            <a href="{% route('home', 1) %}">{% $user->name %}</a>
         </div>
     </header>
 
     <script>
-        axios.post("{% route('api') %}")
+        axios.get("{% route('api') %}").then(res => {
+            console.log(res.data)
+        })
     </script>
 </body>
 

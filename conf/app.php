@@ -1,4 +1,8 @@
 <?php
 
 
-return [];
+return [
+    'middlewares' => [
+        'auth' => \App\Middlewares\AuthMiddleware::class,
+    ]
+];
